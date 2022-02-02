@@ -112,7 +112,9 @@
   };
 
   function getTheLATD () {
-    branch.lastAttributedTouchData(7, function (err, data){console.log(data);});
+	  var latd = branch.lastAttributedTouchData(7)
+	  console.log(latd)
+    //branch.lastAttributedTouchData(function (err, data){console.log(data);});
   };
 
   function makeLink () {
